@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://t4.ftcdn.net/jpg/03/45/88/07/360_F_345880772_zIT2mkdCzTthplO7xqaGGrMspN0jw0ll.webp'); /* Example image URL */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light text shadow for depth */
+    }
+    
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #ff6f61; /* Eye-catching button color */
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #ff3b2d; /* Slightly darker hover effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>How Much Do You Know About sports?</h1>
+    <form id="sports-quiz">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. who holds the record for the most goals in a single world cup tournament?</p>
+        <label>
+          <input type="radio" name="q1" value="Lionel Messi"> Lionel Messi
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Pele"> Pele
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Just Fontaine"> Just Fontaine
+        </label>
+      </div>
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. which country has won the most FIFA World Cuo titles?</p>
+        <label>
+          <input type="radio" name="q2" value="Italy"> Italy
+        </label>
+        <label>
+          <input type="radio" name="q2" value="Argentina"> Argentina
+        </label>
+        <label>
+          <input type="radio" name="q2" value="Brazil"> Brazil
+        </label>
+      </div>
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. which team won the NBA Championship in 2020?</p>
+        <label>
+          <input type="radio" name="q3" value="Los Angeles Laker"> Los Angeles Laker
+        </label>
+        <label>
+          <input type="radio" name="q3" value="Toronto Raptors"> Toronto Raptors
+        </label>
+        <label>
+          <input type="radio" name="q3" value="Golden State Warriors"> Golden State Warriors
+        </label>
+      </div>
+      <button type="button" id="submit-btn">Submit</button>
+    </form>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
